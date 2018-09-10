@@ -1,0 +1,286 @@
+//Product-view
+
+.products-container{
+    @include container-mobile;
+    border-bottom: 0.08125rem solid #EEEEEE;
+    padding-bottom: 4.0625rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 1.875rem;
+}
+
+#filter-nav{
+    background-color: #EEEEEE;
+    outline: none;
+    border: 0.0625rem solid $darkgrey-color;
+    padding: 0.625rem 0.9375rem;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09375rem;
+    font-weight: 700;
+    color: $darkgrey-color;
+    margin-right: 1.25rem;
+}
+
+.product-nav{
+    padding: 3.125rem 0;
+    border-top: 0.08125rem solid #EEEEEE;
+    margin-top: 3.125rem;
+    @include container-mobile;
+    ul{
+        display: none;
+    }
+    label{
+        border-left: 0.0625rem solid #eeeeee;
+        padding: 0 0 0 1.25rem;
+        font-weight: 700;
+    }
+}
+
+.product-col{
+    display: grid;
+    grid-gap: 1.875rem;
+}
+
+.product-view{
+    img{
+        display: block;
+    }
+    transition: all 400ms;
+    &:hover{
+        box-shadow: 0 0px 1.5rem 0 rgba(0,0,0,0.14);
+    }
+}
+
+.view-pricetag{
+    display: none;
+}
+
+.thumbnail{
+    display: none;
+}
+
+#info-tag{
+    display: none;
+}
+
+.product-view-detail{
+    padding: 1.25rem;
+    text-align: center;
+    transition: all 300ms;
+    h3{
+        color: $light-darkgrey-color;
+        font-size: 0.875rem;
+        margin: 0 0 1.25rem 0;
+    }
+    p{
+        font-size: 0.875rem;
+        margin: 0 0 1.125rem 0;
+        color: $main-color;
+    }
+    button{
+        background-color: $main-color;
+        color: $white-color;
+        border: none;
+        outline: none;
+        border-radius: 50%;
+        padding: 0.5rem;
+        font-size: 0.8125rem;
+        margin: 0 0.625rem 0 0;
+        transition: all 300ms;
+        &:last-child{
+            margin: 0;
+        }
+        &:hover{
+            background-color: $turquoise-color;
+        }
+    }
+}
+
+.look{
+    padding: 4.0625rem 0;
+}
+
+.lookbook-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 2rem;
+}
+
+.lookbook{
+    text-align: center;
+    padding: 2.5rem 2.1875rem;
+    background-color: $light-white-color;
+}
+
+.lookbook-info{
+    margin: 0.9375rem 0 0 0;
+    h2{
+        margin: 0;
+        color: $light-darkgrey-color;
+        font-size: 2.1875rem;
+        text-transform: uppercase;
+        font-weight: 900;
+        span{
+            display: block;
+            font-weight: 300;
+        }
+    }
+    p{
+        color: $main-color;
+        line-height: 1.5rem;
+        font-size: 0.8125rem;
+        margin: 1.25rem 0;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+    
+    .product-nav{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                margin-right: 3.125rem;
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    text-transform: uppercase;
+                    font-size: 0.8125rem;
+                    font-weight: 700;
+                    color: $main-color;
+                    &:hover{
+                        color: $turquoise-color;
+                    }
+                    &:active{
+                        color: $turquoise-color;
+                    }
+                }
+            }
+        }
+        label{
+            display: none;
+        }
+    }
+
+    #filter-nav{
+        display: none;
+    }
+
+    .product-view{
+        position: relative;
+    }
+
+    .view-pricetag{
+        display: block;
+        font-size: 1.125rem;
+        margin: 0;
+        color: $main-text-color;
+        position: absolute;
+        margin: 0.625rem 0 0 0.9375rem;
+        list-style-type: none;
+        display: flex;
+        li:first-child{
+            margin-right: 0.625rem;
+        }
+        span{
+            font-size: 0.75rem;
+            vertical-align: text-top;
+        }
+    }
+
+    .product-view-detail{
+        padding: 1.25rem 1.5625rem;
+    }
+}
+
+@media only screen and (min-width:1200px) {
+
+    .product-nav{
+        @include container-full;
+    }
+
+    .products-container{
+        @include container-full;
+        grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    }
+
+    .product-col{
+        grid-template-columns: 1fr 1fr;
+        display: grid;
+    }
+
+    .three, .four{
+        grid-column: 1 / -1;
+    }
+
+    .product-view-detail{
+        transition: all 400ms ease 0s;
+        opacity: 0;
+        visibility: hidden;   
+        background-color: $white-color;
+        position: absolute;
+        box-shadow: 0px 0.3125rem 1.5rem rgba(0, 0, 0, 0.14);        
+    }
+
+    .thumbnail{
+        opacity: 0;
+        transition: all 400ms ease 0s;
+        visibility: hidden;  
+        margin: 0.625rem 0.9375rem 0 0;
+        img{
+            margin-bottom: 10px;
+        }
+    }
+
+    .product-view:hover .thumbnail{
+        opacity: 1;
+        visibility: visible;
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+    }
+
+    .product-view:hover #info-tag{
+        opacity: 1;
+        visibility: visible;
+        display: block;
+        position: absolute;
+        color: $white-color;
+        font-size: 2.375rem;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .product-view:hover .product-view-detail{
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .lookbook-container{
+        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+
+    .lookbook{
+        display: flex;
+        padding: 2.5rem 3.125rem 0 3.125rem;
+        text-align: right;
+    }
+
+    .lookbook-info{
+        margin: 0;
+        h2{
+            margin: 4.375rem 0 0 0;
+        }
+    }
+}

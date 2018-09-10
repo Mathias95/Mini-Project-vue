@@ -1,0 +1,24 @@
+{
+  "name": "mini-project-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mathias95/Mini-Project-vue.git"
+  },
+  "author": "Mathias Jacobsen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mathias95/Mini-Project-vue/issues"
+  },
+  "homepage": "https://github.com/Mathias95/Mini-Project-vue#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.7",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
+  }
+}
