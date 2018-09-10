@@ -1,5 +1,5 @@
 .brand-section{
-    padding: 4.0625rem 0 6.25rem 0;
+    padding: 4.0625rem 0;
 }
 
 .brand-container{
@@ -44,6 +44,10 @@
 }
 
 @media only screen and (min-width:768px) {
+
+    .brand-section{
+        padding: 4.0625rem 0 7.5rem 0;
+    }
 
     .brand-container{
         @include container-tablet;

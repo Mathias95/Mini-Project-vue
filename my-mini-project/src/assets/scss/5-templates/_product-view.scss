@@ -1,5 +1,5 @@
 .product-detail{
-    padding: 4.0625rem 0 6.25rem 0;
+    padding: 4.0625rem 0;
 }
 
 .product-detail-container{
@@ -242,7 +242,10 @@
 
 @media only screen and (min-width:768px) {
 
-
+    .product-detail{
+        padding: 4.0625rem 0 7.5rem 0;
+    }
+    
     .product-detail-container{
         @include container-tablet;
     }

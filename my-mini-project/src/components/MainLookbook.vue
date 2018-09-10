@@ -32,8 +32,5 @@
 <script>
 export default {
   name: 'MainLookbook',
-  props: {
-    msg: String
-  }
 }
 </script>

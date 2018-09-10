@@ -6,3 +6,9 @@
         </div>
     </section>
 </template>
+
+<script>
+export default {
+  name: 'MainBanner',
+}
+</script>

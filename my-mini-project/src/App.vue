@@ -1,10 +1,6 @@
 <template>
   <div id="app">
     <main-header/>
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
     <router-view/>
     <main-footer/>
   </div>
@@ -12,7 +8,7 @@
 
 <style lang="scss">
 //Import global scss styling
-
+@import "./assets/scss/main";
 </style>
 
 <script>
