@@ -10,12 +10,11 @@
     display: inline-block;
     text-align: center;
     background-color: transparent;
+    transition: all 400ms;
     &:hover{
         background-color: $turquoise-color;
         color: $white-color;
         border: 0.09375rem solid transparent;
-        transition: all 400ms;
-
     }
 }
 

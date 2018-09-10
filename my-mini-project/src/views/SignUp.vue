@@ -1,11 +1,6 @@
 <template>
     <div>
-        <section class="sub-banner">
-            <div class="sub-banner-container">
-                <h1>Welcome <span>to Ave</span></h1>
-                <p>Sign in or register</p>
-            </div>
-        </section>
+        <sub-banner/>
         <section class="signup-section">
             <div class="signup-container">
                 <div class="form-col">
