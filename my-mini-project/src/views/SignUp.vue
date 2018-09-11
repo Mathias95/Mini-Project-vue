@@ -1,6 +1,6 @@
 <template>
     <div>
-        <sub-banner/>
+        <sub-banner maintitle="Welcome to Ave" subtext="Sign in or register"></sub-banner>
         <section class="signup-section">
             <div class="signup-container">
                 <div class="form-col">

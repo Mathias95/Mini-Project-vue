@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <sub-banner/>
+      <sub-banner maintitle="The Brand" subtext="Company Slogan Goes Here"></sub-banner>
       <section class="brand-section">
         <div class="brand-container">
           <div class="brand-col">

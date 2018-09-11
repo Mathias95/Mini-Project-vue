@@ -243,7 +243,6 @@
         visibility: visible;
         display: inline-block;
         position: absolute;
-        z-index: 1;
         top: 0;
         right: 0;
     }
@@ -255,7 +254,6 @@
         position: absolute;
         color: $white-color;
         font-size: 2.375rem;
-        z-index: 2;
         top: 0;
         left: 0;
         right: 0;

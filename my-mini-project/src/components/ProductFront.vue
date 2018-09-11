@@ -53,7 +53,7 @@
                   <div class="product-col">
                         <div class="product-view three">
                               <ul class="view-pricetag">
-                                    <li><span>£</span>107</li>
+                                    <li><strike><span>£</span>107</strike></li>
                                     <li><span>£</span>89.99</li>
                               </ul>
                               <picture>

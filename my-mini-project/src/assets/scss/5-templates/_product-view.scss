@@ -8,7 +8,8 @@
     grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
     grid-gap: 1.875rem;;
     p{
-        font-size: 0.875rem;
+        font-size: 0.8125rem;
+        line-height: 1.5rem;
         color: $main-color;
     }
 }
@@ -126,6 +127,7 @@
         }
         a{
             color: $turquoise-color;
+            margin-left: 5px;
         }
     }
 }
@@ -135,6 +137,7 @@
     font-size: 0.875rem;
     margin: 1.25rem 0 1.25rem 1.125rem;
     li{
+        font-size: 0.8125rem;
         margin-bottom: 0.75rem;
     }
 }
@@ -315,6 +318,12 @@
         @include container-desktop;
     }
 
+    .sliderimg-col{
+        img{
+            height: 100%;
+        }
+    }
+
     .info-share{
         flex-wrap: nowrap;
     }
@@ -331,7 +340,7 @@
     }
 
     .product-details{
-            margin: 1.25rem 0 2.25rem 1.125rem;
+         margin: 1.25rem 0 2.25rem 1.125rem;
     }
 
     .select-product{
