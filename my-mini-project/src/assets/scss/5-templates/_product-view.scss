@@ -127,7 +127,7 @@
         }
         a{
             color: $turquoise-color;
-            margin-left: 5px;
+            margin-left: 0.3125rem;
         }
     }
 }
@@ -225,8 +225,8 @@
         list-style-type: none;
         margin-top: 2.1875rem;
         li{
-            border-bottom: 1px solid $light-white-color;
-            padding-bottom: 15px;
+            border-bottom: 0.0625rem solid $light-white-color;
+            padding-bottom: 0.9375rem;
             margin-bottom: 1.5625rem;
             a{
                 text-decoration: none;

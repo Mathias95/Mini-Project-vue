@@ -21,8 +21,11 @@
                         <input class="input-box" type="password" id="register-password" name="user_register_password" placeholder="Your Password..">
                         <input class="input-box" type="password" id="confirm-password" name="user_confirm_password" placeholder="Confirm Password..">
                         <div class="updates">
-                            <input type="checkbox" id="exclusive" value="exclusive_register" name="user_exclusive">
-                            <label for="exclusive">Sign up for exclusive updates, discounts, new arrivals, contests, and more!</label>     
+                            <label class="checkbox-container">
+                                <input type="checkbox" id="exclusive" value="exclusive_register" name="user_exclusive">
+                                <span class="check"></span>
+                                <p>Sign up for exclusive updates, discounts, new arrivals, contests, and more!</p>   
+                            </label>  
                         </div>
                         <div class="form-btn">
                             <button class="btn btn-border" type="submit">Create Account</button>  
