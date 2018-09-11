@@ -5,7 +5,7 @@
                         <div class="footer-col">
                               <ul>
                                     <h3>Information</h3>
-                                    <li><a href="#">The brand</a></li>
+                                    <li><router-link to="Brand">The brand</router-link></li>
                                     <li><a href="#">Local stores</a></li>
                                     <li><a href="#">Customer service</a></li>
                                     <li><a href="#">Privacy &#38; cookies</a></li>
@@ -18,15 +18,15 @@
                                     <li><a href="#">Shipping &#38; returns</a></li>
                                     <li><a href="#">Secure shopping</a></li>
                                     <li><a href="#">Testimonials</a></li>
-                                    <li><a href="#">Award winning</a></li>
-                                    <li><a href="#">Ethical trading</a></li>
+                                    <li><router-link to="Brand">Award winning</router-link></li>
+                                    <li><router-link to="Brand">Ethical trading</router-link></li>
                               </ul>
                         </div>
                         <div class="footer-col">
                               <ul>
                                     <h3>Your Account</h3>
-                                    <li><a href="#">Sign in</a></li>
-                                    <li><a href="#">Register</a></li>
+                                    <li><router-link to="SignUp">Sign in</router-link></li>
+                                    <li><router-link to="SignUp">Register</router-link></li>
                                     <li><a href="#">View cart</a></li>
                                     <li><a href="#">View your lookbook</a></li>
                                     <li><a href="#">Track an order</a></li>

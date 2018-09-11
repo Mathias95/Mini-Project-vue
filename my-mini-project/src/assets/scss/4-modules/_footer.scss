@@ -26,6 +26,9 @@ footer{
     ul{
         list-style-type: none;
         li{
+            .router-link-active{
+                color: $turquoise-color;
+            }
             font-size: 0.8125rem;
             margin-bottom: 0.9375rem;
             &:last-child{

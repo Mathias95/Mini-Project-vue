@@ -14,6 +14,9 @@ header{
     list-style-type: none;
     display: none;
     li{
+        .router-link-active{
+            color: $turquoise-color;
+        }
         a{
             color: $main-color;
             text-decoration: none;
@@ -57,7 +60,7 @@ header{
 
 //Mobile menu
 
-.main-nav{
+.mainnav{
     background-color: $white-color;
 }
 
@@ -104,6 +107,9 @@ header{
 .nav-items{
     list-style-type: none;
     li{
+        .router-link-active{
+            color: $turquoise-color;
+        }
         margin-bottom: 1.875rem;
         display: block;
         &:last-child{
@@ -229,11 +235,19 @@ header{
         display: none;
     }
 
-    .main-nav{
+    .mainnav{
         background-color: transparent;
-        position: absolute;
+        position: fixed;
         left: 0;
         right: 0;
+        transition: all 400ms;
+        z-index: 1;
+    }
+
+    .mainnav.scrollnav{
+        top: 0;
+        background-color: $light-white-color;
+        box-shadow: 0 8px 28px 0 rgba(0,0,0,0.14);
     }
 
     .nav-container{
@@ -258,7 +272,7 @@ header{
             i{
                 display: none;
             }
-            margin: 0 3.125rem 0 0;
+            margin: 0 3.4375rem 0 0;
             border-bottom: none;
             a{
                 font-size: 0.8125rem;
