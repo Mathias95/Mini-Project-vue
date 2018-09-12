@@ -156,7 +156,7 @@ header{
 .megamenu-col{
     margin-top: 2.1875rem;
     h3{
-        color: $turquoise-color;
+        color: $darkgrey-color;
         margin: 0 0 1.875rem 0;
         font-size: 0.8125rem;
         text-transform: uppercase;
@@ -319,9 +319,6 @@ header{
     .megamenu-col{
         &:last-child{
             margin-right: 8.75rem;
-        }
-        h3{
-            color: $darkgrey-color;
         }
         margin-top: 0;
         ul{

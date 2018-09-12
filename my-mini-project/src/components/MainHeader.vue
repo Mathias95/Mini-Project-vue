@@ -62,7 +62,7 @@
                             </div>
                         </li>
                         <li><a href="#">WOMENS<i id="arrow-icon" class="fas fa-angle-down"></i></a></li>
-                        <li><router-link to="Brand">THE BRAND</router-link><i id="arrow-icon" class="fas fa-angle-down"></i></li>
+                        <li><router-link to="Brand">THE BRAND <i id="arrow-icon" class="fas fa-angle-down"></i></router-link></li>
                         <li><a href="#">LOCAL STORES<i id="arrow-icon" class="fas fa-angle-down"></i></a></li>
                         <li><a href="#">LOOK BOOK<i id="arrow-icon" class="fas fa-angle-down"></i></a></li>
                     </ul>

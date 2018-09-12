@@ -2,6 +2,8 @@
   <section class="look">
       <div class="lookbook-container">
             <div class="lookbook">
+                <source media="(min-width: 1200px)" srcset="../assets/img/blackshirt.jpg"> 
+                <source media="(min-width: 768px)" srcset="../assets/img/blackshirt-tablet.jpg">
               <img src="../assets/img/menslook.png" alt="">
               <div class="lookbook-info">
                   <h2>Men's<span>Lookbook</span></h2>

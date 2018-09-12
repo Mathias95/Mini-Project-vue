@@ -1,0 +1,111 @@
+.tabs{
+    @include container-mobile;
+    h2{
+        font-size: 0.875rem;
+        margin-top: 1.375rem;
+        color: $main-color;
+        text-transform: uppercase;
+    }
+    p{
+        font-size: 0.875rem;
+        color: $main-color;
+        line-height: 1.5rem;
+    }
+}
+
+.tab-nav{
+    margin-top: 2.1875rem;
+    ul{
+        list-style-type: none;
+        li{
+            border-bottom: 0.0625rem solid $light-white-color;
+            padding-bottom: 0.9375rem;
+            margin-bottom: 1.5625rem;
+            a{
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 0.75rem;
+                color: $darkgrey-color;
+                font-weight: 700;
+                letter-spacing: 0.09375rem;
+            }
+            i{
+                margin-left: 0.9375rem;
+            }
+        }
+    }
+    button{
+        background-color: transparent;
+        border: none;
+        font-size: 0.75rem;
+        color: $darkgrey-color;
+        font-weight: 700;
+        letter-spacing: 0.09375rem;
+        text-transform: uppercase;
+        outline: none;
+        &:active{
+            background-color: $darkgrey-color;
+        }
+    }
+}
+
+.tab-wrapper{
+    padding: 0 0.625rem;
+    ul{
+        margin-top: 2.1875rem;
+        list-style-type: none;
+        li{
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 30px;
+            font-size: 0.8125rem;
+            line-height: 1.5rem;
+            color: $main-color;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+
+@media only screen and (min-width:768px) {
+
+    .tabs{
+        @include container-tablet;
+    }
+
+    #tabsmobile{
+        display: none;
+    }
+
+    .tab-nav{
+        background-color: $light-white-color;
+        button{
+            padding: 20px 15px;
+            transition: all 400ms;
+            &:hover{
+                background-color: $darkgrey-color;
+                color: $white-color;
+            }
+        }
+    }
+
+    .tab-wrapper{
+        padding: 0 1.875rem;
+    }
+}
+
+
+@media only screen and (min-width:1200px) {
+
+    .tabs{
+        @include container-desktop;
+    }
+
+    .tab-nav{
+        button{
+            min-width: 130px;
+        }
+    }
+}
