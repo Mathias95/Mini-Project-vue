@@ -279,8 +279,8 @@ header{
                 margin-bottom: 0;
                 text-transform: uppercase;
                 &::after{
-                    content: "\f078";
-                    font-family: FontAwesome;
+                    content: '\f078';
+                    font-family: "Font Awesome 5 Free";
                     font-size: 0.625rem;
                     color:  $lightgrey-color;
                     position: absolute;

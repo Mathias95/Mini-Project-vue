@@ -73,10 +73,13 @@
 }
 
 .checkbox-container .check:after{
-    content: "\f00c";
-    font-family: FontAwesome;
+    width: 0.1875rem;
+    height: 0.4375rem;
+    border: solid white;
+    border-width: 0 0.125rem 0.125rem 0;
+    transform: rotate(45deg);
     color: $white-color;
-    left: 0.25rem;
+    left: 0.4375rem;
     top: 0.25rem;
     font-size: 0.8125rem;
 }
