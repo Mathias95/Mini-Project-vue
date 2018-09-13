@@ -1,9 +1,9 @@
 <template>
       <div>
-            <footer>
-                  <div class="footer-container">
-                        <div class="footer-col">
-                              <ul>
+            <footer class="footer">
+                  <div class="footer__container">
+                        <div class="footer__col">
+                              <ul class="footer__col--footeritems">
                                     <h3>Information</h3>
                                     <li><router-link to="Brand">The brand</router-link></li>
                                     <li><a href="#">Local stores</a></li>
@@ -12,8 +12,8 @@
                                     <li><a href="#">Site map</a></li>
                               </ul>
                         </div>
-                        <div class="footer-col">
-                              <ul>
+                        <div class="footer__col">
+                              <ul class="footer__col--footeritems">
                                     <h3>Why Buy From Us</h3>
                                     <li><a href="#">Shipping &#38; returns</a></li>
                                     <li><a href="#">Secure shopping</a></li>
@@ -22,8 +22,8 @@
                                     <li><router-link to="Brand">Ethical trading</router-link></li>
                               </ul>
                         </div>
-                        <div class="footer-col">
-                              <ul>
+                        <div class="footer__col">
+                              <ul class="footer__col--footeritems">
                                     <h3>Your Account</h3>
                                     <li><router-link to="SignUp">Sign in</router-link></li>
                                     <li><router-link to="SignUp">Register</router-link></li>
@@ -33,8 +33,8 @@
                                     <li><a href="#">Update information</a></li>
                               </ul>
                         </div>
-                        <div class="footer-col">
-                              <ul>
+                        <div class="footer__col">
+                              <ul class="footer__col--footeritems">
                                     <h3>Lookbook</h3>
                                     <li><a href="#">Latest posts</a></li>
                                     <li><a href="#">Men’s lookbook</a></li>
@@ -43,19 +43,19 @@
                                     <li><a href="#">Delete your lookbook</a></li>
                               </ul>
                         </div>
-                        <div class="footer-col">
-                              <ul>
+                        <div class="footer__col">
+                              <ul class="footer__col--footeritems">
                                     <h3>Contact Details</h3>
                                     <li>Head Office: Avenue Fashion, 180-182 Regent Street, London.</li>
                                     <li>Telephone: <a href="tel:0123-456-789">0123-456-789</a></li>
                                     <li>Email: <a href="mailto:support@yourwebsite.com">support@yourwebsite.com</a></li>
                               </ul>
                         </div>
-                        <div class="footer-banner">
-                              <div class="award-banner">
+                        <div class="footer__banner">
+                              <div class="footer__banner--awardbanner">
                                     <h4>AWARD WINNER <span>FASHION AWARDS 2016</span></h4>
                               </div>
-                              <ul class="social-banner">
+                              <ul class="footer__banner--socialbanner">
                                     <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                                     <li><a href="#"><i class="fab fa-twitter"></i></a></li>
                                     <li><a href="#"><i class="fab fa-instagram"></i></a></li>
@@ -65,7 +65,7 @@
                   </div>
             </footer>
             <div class="copy">
-                  <div class="copy-container">
+                  <div class="copy__container">
                         <span>&#169; 2016 Avenue Fashion&#8482;</span>
                   </div>
             </div>
