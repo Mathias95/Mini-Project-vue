@@ -43,6 +43,7 @@
 }
 
 .product-view{
+    box-shadow: 0 0 1.5rem 0 rgba(0,0,0,0.14);
     img{
         display: block;
     }
@@ -111,6 +112,9 @@
     text-align: center;
     padding: 2.5rem 2.1875rem;
     background-color: $light-white-color;
+    img{
+        width: 50%;
+    }
 }
 
 .lookbook-info{
@@ -170,6 +174,7 @@
 
     .product-view{
         position: relative;
+        box-shadow: none;
     }
 
     .view-pricetag{
@@ -276,6 +281,9 @@
         display: flex;
         padding: 2.5rem 3.125rem 0 3.125rem;
         text-align: right;
+            img{
+                width: 100%;
+            }
     }
 
     .lookbook-info{
