@@ -64,7 +64,7 @@
 
     .brand-container{
         @include container-desktop;
-        grid-template-columns: repeat(10, 1fr)
+        grid-template-columns: repeat(10, 1fr);
     }
 
     .img-design{
