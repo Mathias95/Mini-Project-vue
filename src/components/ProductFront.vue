@@ -119,8 +119,6 @@
                 axios 
                 .get("/productlist.json")
                 .then(response => (this.products = response.data.products))
-                .catch(error => console.log(`API ERROR ${error}`))
-                .finally();
             }
         }
     };

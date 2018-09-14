@@ -6,9 +6,9 @@
                 <div class="form-col">
                     <form class="form-left" @submit.prevent="SubmitForm">
                         <legend class="form-header">Sign In</legend>
-                        <input type="email" class="input-box" v-model="umail" id="email" v-validate="'required|email'" name="signin email" placeholder="Your Email..">
+                        <input type="email" class="input-box" id="email" v-validate="'required|email'" name="signin email" placeholder="Your Email..">
                         <span class="input-error" v-show="errors.has('signin email')">{{ errors.first('signin email') }}</span>
-                        <input class="input-box" type="password" v-model="upassword" id="password" v-validate="'required|min:6'" name="password" placeholder="Your Password..">
+                        <input class="input-box" type="password" id="password" v-validate="'required|min:6'" name="password" placeholder="Your Password..">
                           <span class="input-error">{{errors.first('password')}}</span>
                         <div class="form-btn">
                             <button class="btn btn-border" type="submit">Sign in</button>
@@ -19,7 +19,7 @@
                 <div class="form-col">
                     <form class="form-right" action="sign-up.html" method="post">
                         <legend class="form-header">Register</legend>
-                        <input type="email" class="input-box" v-model="rmail" id="remail" v-validate="'required|email'" name="register email" placeholder="Your Email..">
+                        <input type="email" class="input-box" id="remail" v-validate="'required|email'" name="register email" placeholder="Your Email..">
                         <span class="input-error" v-show="errors.has('register email')">{{ errors.first('register email') }}</span>
                         <input class="input-box" type="password" id="register-password" name="user_register_password" placeholder="Your Password..">
                         <input class="input-box" type="password" id="confirm-password" name="user_confirm_password" placeholder="Confirm Password..">

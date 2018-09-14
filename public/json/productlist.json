@@ -1,44 +1,48 @@
-[
-    {
-        "productId": 1,
-        "productPrice": 89.99,
-        "title": "Mens Burnt Black Casual Sweatshirt",
-        "productDesc": "Classic casual sweatshirt for men on the move. 100% cotton. £89.99",
-        "thumbnailUrl": "../img/blackshirt.jpg"
-    },
-    {
-        "productId": 2,
-        "productPrice": 47.50 ,
-        "title": "Womens White Casual Tee",
-        "productDesc": "Classic casual t-shirt for women on the move. 100% cotton. £47.50",
-        "thumbnailUrl": "../img/whiteshirt.jpg"
-    },
-    {
-        "productId": 3,
-        "productPrice": 69.95,
-        "title": "Mens Blue Casual Sweatshirt",
-        "productDesc": "Classic casual sweatshirt for men on the move. 100% cotton. £69.95",
-        "thumbnailUrl": "../img/blueshirt.jpg"
-    },
-    {
-        "productId": 4,
-        "productPrice": 89.99,
-        "title": "Mens Black Casual Sweater",
-        "productDesc": "Classic casual sweater for men on the move. 100% cotton. £89.99",
-        "thumbnailUrl": "../img/blacksweater.jpg"
-    },
-    {
-        "productId": 5,
-        "productPrice": 29.95,
-        "title": "Womens Burnt Orange Casual Tee",
-        "productDesc": "Classic casual t-shirt for women on the move. 100% cotton. £29.95",
-        "thumbnailUrl": "../img/orangeshirt-tablet.jpg"
-    },
-    {
-        "productId": 6,
-        "productPrice": 34.79,
-        "title": "Womens Black Casual Tee",
-        "productDesc": "Classic casual sweatst-shirt for women on the move. 100% cotton. £34.79",
-        "thumbnailUrl": "../img/blacktshirt.jpg"
-    }
-]
+{
+    "count": 10,
+    "products": [
+        {
+            "id": "1",
+            "productPrice": 89.99,
+            "title": "Mens Burnt Black Casual Sweatshirt",
+            "productDesc": "Classic casual sweatshirt for men on the move. 100% cotton. £89.99",
+            "thumbnailUrl": "../img/blackshirt.jpg"
+        },
+        {
+            "id": "2",
+            "productPrice": 47.50 ,
+            "title": "Womens White Casual Tee",
+            "productDesc": "Classic casual t-shirt for women on the move. 100% cotton. £47.50",
+            "thumbnailUrl": "../img/whiteshirt.jpg"
+        },
+        {
+            "id": "3",
+            "productPrice": 69.95,
+            "title": "Mens Blue Casual Sweatshirt",
+            "productDesc": "Classic casual sweatshirt for men on the move. 100% cotton. £69.95",
+            "thumbnailUrl": "../img/blueshirt.jpg"
+        },
+        {
+            "id": "4",
+            "productPrice": 89.99,
+            "title": "Mens Black Casual Sweater",
+            "productDesc": "Classic casual sweater for men on the move. 100% cotton. £89.99",
+            "thumbnailUrl": "../img/blacksweater.jpg"
+        },
+        {
+            "id": "5",
+            "productPrice": 29.95,
+            "title": "Womens Burnt Orange Casual Tee",
+            "productDesc": "Classic casual t-shirt for women on the move. 100% cotton. £29.95",
+            "thumbnailUrl": "../img/orangeshirt-tablet.jpg"
+        },
+        {
+            "id": "6",
+            "productPrice": 34.79,
+            "title": "Womens Black Casual Tee",
+            "productDesc": "Classic casual sweatst-shirt for women on the move. 100% cotton. £34.79",
+            "thumbnailUrl": "../img/blacktshirt.jpg"
+        }
+    ]
+
+}

@@ -101,34 +101,34 @@
 </template>
 
 <script>
-    // import axios from "axios";
+    import axios from "axios";
     import TabNav from '@/components/TabNav.vue';
 
     export default {
         name: 'ProductSingle',
         components: {
             TabNav
-        }
-        // data(){
-        //     return {
-        //         product: null
-        //     };
-        // },
-        // mounted(){
-        //     this.getProductById();
-        // },
-        // methods: {
-        //     getProductById(){
-        //         let productId = this.$route.params.id;
-        //         console.log(typeof productId);
-        //         axios
-        //             .get("/productlist.json")
-        //             .then(response => {
-        //                 this.product = response.data.products.find(p => p.id === productId);
-        //                 console.log(this.product);
-        //             }) 
-        //             .catch(error => console.log(error));
-        //     }
-        // }
+        },
+         data(){
+             return {
+                 product: null
+             };
+         },
+         mounted(){
+             this.getProductById();
+         },
+         methods: {
+             getProductById(){
+                 let productId = this.$route.params.id;
+                 console.log(typeof productId);
+                 axios
+                     .get("/productlist.json")
+                     .then(response => {
+                         this.product = response.data.products.find(p => p.id === productId);
+                         console.log(this.product);
+                     }) 
+                     .catch(error => console.log(error));
+             }
+         }
     };
 </script>
