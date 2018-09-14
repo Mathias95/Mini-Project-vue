@@ -4,7 +4,10 @@ import Home from './views/Home.vue'
 import Brand from './views/Brand.vue'
 import SignUp from './views/Signup.vue'
 import ProductDetail from './views/ProductDetail.vue'
+import VeeValidate from 'vee-validate';
 
+
+Vue.use(VeeValidate);
 Vue.use(Router)
 
 export default new Router({

@@ -281,15 +281,20 @@
         display: flex;
         padding: 2.5rem 3.125rem 0 3.125rem;
         text-align: right;
-            img{
-                width: 100%;
-            }
     }
 
     .lookbook-info{
         margin: 0;
         h2{
             margin: 4.375rem 0 0 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1564px){
+    .lookbook{
+        img{
+            width: 100%;
         }
     }
 }

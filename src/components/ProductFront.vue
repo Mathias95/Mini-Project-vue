@@ -100,7 +100,28 @@
 </template>
 
 <script>
+    import axios from "axios";
+    
     export default {
     name: 'ProductFront',
-    }
+
+        data() {
+            return {
+            products: null
+            };
+        },
+
+        mounted() {
+            this.getData();
+        },
+        methods: {
+            getData(){
+                axios 
+                .get("/productlist.json")
+                .then(response => (this.products = response.data.products))
+                .catch(error => console.log(`API ERROR ${error}`))
+                .finally();
+            }
+        }
+    };
 </script>
