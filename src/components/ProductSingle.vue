@@ -1,6 +1,6 @@
 <template>
     <section class="product-detail">
-        <div class="product-detail-container">
+        <div v-if="product" class="product-detail-container">
             <div class="sliderimg-col">
                 <div class="button-slider-wrapper">
                         <button class="btn-slider">
@@ -10,10 +10,10 @@
                             <i class="fas fa-angle-right"></i>      
                         </button>
                 </div>
-                <img src="../assets/img/shirtslide.jpg" alt="">
+                <img :src="product.productSliderImg" alt="">
             </div>
             <div class="detail-col">
-                <h2>AVE Classic Sweatshirt</h2>
+                <h2>{{product.productSingleTitle}}</h2>
                 <div class="info-share">
                         <ul class="reviews">
                             <li><i class="fas fa-star"></i></li>
@@ -35,15 +35,15 @@
                         </ul>
                 </div>
                 <ul class="product-price">
-                    <li><strike><span>£</span>107</strike></li>
-                    <li><span>£</span>89.99</li>
+                    <li><strike><span>£</span>{{product.productOldPrice}}</strike></li>
+                    <li><span>£</span>{{product.productPrice}}</li>
                 </ul>
                 <ul class="product-stock">
                     <li><span>Availability:</span> In stock</li>
-                    <li><span>Product code:</span> #499577</li>
+                    <li><span>Product code:</span> #{{product.id}}</li>
                     <li><span>Tags:</span> <a href="#">Classic,</a><a href="#">Casual,</a> <a href="#">V-neck,</a><a href="#">Loose</a></li>
                 </ul>
-                <p>Donec sem lorem laoreet tempor un risus vitae, rutrum sodales nibh suspendisse est congue metus nunc, id viverra elit loreti rhoncus quis consecteur es. Donec pulvinar tempor lorem a pretium justo interdum.</p>
+                <p>{{product.productDesc}}</p>
                 <ul class="product-details">
                     <li>Elasticated cuffs</li>
                     <li>Casual fit</li>

@@ -19,76 +19,26 @@
                 </ul>
             </nav>
             <div class="products-container">
-                <div class="product-view one">
-                    <ul class="view-pricetag">
-                        <li><span>£</span>89.99</li>
-                    </ul>
-                    <picture>
-                        <source media="(min-width: 1200px)" srcset="../assets/img/blackshirt.jpg"> 
-                        <source media="(min-width: 768px)" srcset="../assets/img/blackshirt-tablet.jpg">
-                        <img src="../assets/img/blackshirt.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="product-view two">
-                    <ul class="view-pricetag">
-                        <li><span>£</span>47.50</li>
-                    </ul>
-                    <picture>
-                        <source media="(min-width: 1200px)" srcset="../assets/img/whiteshirt.jpg"> 
-                        <source media="(min-width: 768px)" srcset="../assets/img/whiteshirt-tablet.jpg">
-                        <img src="../assets/img/whiteshirt.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="product-view four">
-                    <ul class="view-pricetag">
-                        <li><span>£</span>69.95</li>
-                    </ul>
-                    <picture>
-                        <source media="(min-width: 768px)" srcset="../assets/img/blueshirt.jpg">
-                        <img src="../assets/img/blueshirt-mobile.jpg" alt="">
-                    </picture>
-                </div>
-                <div class="product-view three">
+                <div v-for="product in products" :key="product.id" class="product-view">
                         <ul class="view-pricetag">
-                            <li><strike><span>£</span>107</strike></li>
-                            <li><span>£</span>89.99</li>
+                            <li><strike><span>£</span>{{product.productOldPrice}}</strike></li>
+                            <li><span>£</span>{{product.productPrice}}</li>
                         </ul>
                         <picture>
-                        <source media="(min-width: 768px)" srcset="../assets/img/blacksweater.jpg">
-                        <img src="../assets/img/blacksweater-mobile.jpg" alt="">
+                            <img :src="product.productviewImg">
                         </picture>
-                </div>
-                <div class="product-view five">
-                        <ul class="view-pricetag">
-                            <li><span>£</span>29.95</li>
-                        </ul>
-                        <picture>
-                            <source media="(min-width: 1200px)" srcset="../assets/img/orangeshirt.jpg">  
-                            <source media="(min-width: 768px)" srcset="../assets/img/orangeshirt-tablet.jpg">
-                            <img src="../assets/img/orangeshirt.jpg" alt="">
-                        </picture>
-                        <a id="info-tag" href="#"><i class="fas fa-info-circle"></i></a>
+                        <router-link :to="`/product/${product.id}`" id="info-tag"><i class="fas fa-info-circle"></i></router-link>
                         <div class="thumbnail">
-                            <img src="../assets/img/thumb-front.jpg" alt="">
-                            <img src="../assets/img/thumb-back.jpg" alt="">
+                            <img :src="product.productThumbnailFront">
+                            <img :src="product.productThumbnailBack">
                         </div>
                         <div class="product-view-detail">
-                            <h3>WOMENS BURNT ORANGE CASUAL TEE  £29.95</h3>
-                            <p>Classic casual t-shirt for women on the move. 100% cotton.</p>
+                            <h3>{{product.productTitle}}</h3>
+                            <p>{{product.productDesc}}</p>
                             <button class=""><i class="fas fa-shopping-cart"></i></button>
                             <button class=""><i class="far fa-heart"></i></button>
                             <button class=""><i class="fas fa-link"></i></button>
                         </div>
-                </div>
-                <div class="product-view six">
-                    <ul class="view-pricetag">
-                        <li><span>£</span>34.79</li>
-                    </ul>
-                    <picture>
-                        <source media="(min-width: 1200px)" srcset="../assets/img/blacktshirt.jpg">  
-                        <source media="(min-width: 768px)" srcset="../assets/img/blacktshirt-tablet.jpg">  
-                        <img src="../assets/img/blacktshirt.jpg" alt="">
-                    </picture>
                 </div>
             </div>
         </main>
