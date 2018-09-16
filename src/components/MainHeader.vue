@@ -13,8 +13,8 @@
                 </div>
                 <div class="header-info">
                     <ul class="member-dekstop">
-                        <li><router-link to="SignUp">Register</router-link></li>
-                        <li><router-link to="SignUp">Sign in</router-link></li>
+                        <li><router-link to="/SignUp">Register</router-link></li>
+                        <li><router-link to="/SignUp">Sign in</router-link></li>
                     </ul>
                     <button class="basket"><i id="cart-icon" class="fas fa-shopping-cart"></i>empty<i id="arrow-icon" class="fas fa-angle-down"></i></button>  
                 </div>
@@ -62,7 +62,7 @@
                             </div>
                         </li>
                         <li><a href="#">WOMENS<i id="arrow-icon" class="fas fa-angle-down"></i></a></li>
-                        <li><router-link to="Brand">THE BRAND <i id="arrow-icon" class="fas fa-angle-down"></i></router-link></li>
+                        <li><router-link to="/Brand">THE BRAND <i id="arrow-icon" class="fas fa-angle-down"></i></router-link></li>
                         <li><a href="#">LOCAL STORES<i id="arrow-icon" class="fas fa-angle-down"></i></a></li>
                         <li><a href="#">LOOK BOOK<i id="arrow-icon" class="fas fa-angle-down"></i></a></li>
                     </ul>
