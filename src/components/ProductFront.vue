@@ -25,7 +25,7 @@
                             <li><span>£</span>{{product.productPrice}}</li>
                         </ul>
                         <picture>
-                            <img :src="product.productviewImg">
+                            <router-link :to="`/product/${product.id}`"><img :src="product.productviewImg"></router-link>
                         </picture>
                         <router-link :to="`/product/${product.id}`" id="info-tag"><i class="fas fa-info-circle"></i></router-link>
                         <div class="thumbnail">

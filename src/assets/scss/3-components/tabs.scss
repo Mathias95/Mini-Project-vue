@@ -15,38 +15,23 @@
 
 .tab-nav{
     margin-top: 2.1875rem;
-    ul{
-        list-style-type: none;
-        li{
-            border-bottom: 0.0625rem solid $light-white-color;
-            padding-bottom: 0.9375rem;
-            margin-bottom: 1.5625rem;
-            a{
-                text-decoration: none;
-                text-transform: uppercase;
-                font-size: 0.75rem;
-                color: $darkgrey-color;
-                font-weight: 700;
-                letter-spacing: 0.09375rem;
-            }
-            i{
-                margin-left: 0.9375rem;
-            }
-        }
-    }
     button{
         background-color: transparent;
         border: none;
-        font-size: 0.75rem;
+        outline: none;
+        display: block;
         color: $darkgrey-color;
         font-weight: 700;
-        letter-spacing: 0.09375rem;
         text-transform: uppercase;
-        outline: none;
-        &:active{
-            background-color: $darkgrey-color;
+        margin-bottom: 0.9375rem;
+        padding-bottom: 0.9375rem;
+        letter-spacing: 0.09375rem;
+        font-size: 0.75rem;
+        i{
+            margin-left: 10px;
         }
     }
+
 }
 
 .tab-wrapper{
@@ -82,11 +67,27 @@
     .tab-nav{
         background-color: $light-white-color;
         button{
+            display: inline-block;
+            background-color: transparent;
             padding: 20px 15px;
+            margin-bottom: 0;
             transition: all 400ms;
+            border: none;
+            font-size: 0.75rem;
+            color: $darkgrey-color;
+            font-weight: 700;
+            letter-spacing: 0.09375rem;
+            text-transform: uppercase;
+            outline: none;
             &:hover{
                 background-color: $darkgrey-color;
                 color: $white-color;
+            }
+            &:active{
+                background-color: $darkgrey-color;
+            }
+            i{
+                display: none;
             }
         }
     }

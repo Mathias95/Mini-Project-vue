@@ -84,19 +84,6 @@
             </div>
         </div>
         <tab-nav/>
-        <div class="tabs" id="tabsmobile">
-            <nav class="tab-nav">
-                <ul>
-                    <li><a href="#">Description</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Video</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Size &#38; Specs</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Delivery &#38; Returns</a><i class="fas fa-angle-down"></i></li>
-                    <li><a href="#">Reviews</a><i class="fas fa-angle-down"></i></li>
-                </ul>
-            </nav>
-            <div class="tab-wrapper">
-            </div>
-        </div>
     </section>
 </template>
 

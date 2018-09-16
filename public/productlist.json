@@ -8,7 +8,7 @@
             "productSingleTitle": "Mens Burnt Black Casual Sweatshirt",
             "productDesc": "Classic casual sweatshirt for men on the move. 100% cotton.",
             "productviewImg": "../img/blackshirt.jpg",
-            "productThumbnailFront": "/img/thumb-front.jpg",
+            "productThumbnailFront": "/img/blackshirt-thumb.jpg",
             "productThumbnailBack": "/img/thumb-back.jpg",
             "productSliderImg": "/img/blackshirt-slider.jpg"
             
@@ -20,7 +20,7 @@
             "productSingleTitle": "Womens White Casual Tee",
             "productDesc": "Classic casual t-shirt for women on the move. 100% cotton.",
             "productviewImg": "../img/whiteshirt.jpg",
-            "productThumbnailFront": "/img/thumb-front.jpg",
+            "productThumbnailFront": "/img/whiteshirt-thumb.jpg",
             "productThumbnailBack": "/img/thumb-back.jpg",
             "productSliderImg": "../img/whiteshirt-slider.jpg"
         },
@@ -31,7 +31,7 @@
             "productSingleTitle": "Mens Blue Casual Sweatshirt",
             "productDesc": "Classic casual sweatshirt for men on the move. 100% cotton.",
             "productviewImg": "../img/blueshirt.jpg",
-            "productThumbnailFront": "/img/thumb-front.jpg",
+            "productThumbnailFront": "/img/blueshirt-thumb.jpg",
             "productThumbnailBack": "/img/thumb-back.jpg",
             "productSliderImg": "../img/blueshirt-slider.jpg"
         },
@@ -43,7 +43,7 @@
             "productSingleTitle": "Mens Black Casual Sweater",
             "productDesc": "Classic casual sweater for men on the move. 100% cotton.",
             "productviewImg": "../img/blacksweater.jpg",
-            "productThumbnailFront": "/img/thumb-front.jpg",
+            "productThumbnailFront": "/img/blacksweater-thumb.jpg",
             "productThumbnailBack": "/img/thumb-back.jpg",
             "productSliderImg": "../img/blacksweater-slider.jpg"
         },
@@ -65,7 +65,7 @@
             "productSingleTitle": "Womens Black Casual Tee",
             "productDesc": "Classic casual sweatst-shirt for women on the move. 100% cotton.",
             "productviewImg": "../img/blacktshirt.jpg",
-            "productThumbnailFront": "/img/thumb-front.jpg",
+            "productThumbnailFront": "/img/blacktshirt-thumb.jpg",
             "productThumbnailBack": "/img/thumb-back.jpg",
             "productSliderImg": "../img/blacktshirt-slider.jpg"
         }

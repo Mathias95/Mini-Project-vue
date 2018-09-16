@@ -1,11 +1,11 @@
 <template>
     <div id="tabnav" class="tabs">
         <div class="tab-nav">
-            <button v-on:click="tabitem=1">Description</button>
-            <button v-on:click="tabitem=2">Video</button>
-            <button v-on:click="tabitem=3">Size &#38; Specs</button>
-            <button v-on:click="tabitem=4">Delivery &#38; Returns</button>
-            <button v-on:click="tabitem=5">Reviews</button>
+            <button v-on:click="tabitem=1">Description<i class="fas fa-angle-down"></i></button>
+            <button v-on:click="tabitem=2">Video<i class="fas fa-angle-down"></i></button>
+            <button v-on:click="tabitem=3">Size &#38; Specs<i class="fas fa-angle-down"></i></button>
+            <button v-on:click="tabitem=4">Delivery &#38; Returns<i class="fas fa-angle-down"></i></button>
+            <button v-on:click="tabitem=5">Reviews<i class="fas fa-angle-down"></i></button>
         </div>
         <div class="tab-wrapper">
             <ul v-if="tabitem === 1">
