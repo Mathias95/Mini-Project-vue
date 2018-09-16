@@ -140,6 +140,8 @@ header{
     padding: 0.5rem;
     color: $main-text-color;
     font-size: 0.875rem;
+    justify-content: space-between;
+    display: flex;
     input{
         background-color: transparent;
         border: none;
@@ -156,7 +158,7 @@ header{
 .megamenu-col{
     margin-top: 2.1875rem;
     h3{
-        color: $darkgrey-color;
+        color: $lightgrey-color;
         margin: 0 0 1.875rem 0;
         font-size: 0.8125rem;
         text-transform: uppercase;
@@ -317,6 +319,9 @@ header{
     }
 
     .megamenu-col{
+        h3{
+            color: $darkgrey-color;
+        }
         &:last-child{
             margin-right: 8.75rem;
         }

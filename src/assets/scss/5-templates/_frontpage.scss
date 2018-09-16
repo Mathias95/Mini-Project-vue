@@ -148,11 +148,15 @@
             display: flex;
             li{
                 list-style: none;
-                margin-right: 3.125rem;
+                margin-right: 2.2em;
                 &:last-child{
                     margin-right: 0;
                 }
-                a{
+                button{
+                    transition: all 400ms;
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
                     text-transform: uppercase;
                     font-size: 0.8125rem;
                     font-weight: 700;
@@ -212,11 +216,6 @@
             vertical-align: text-top;
         }
     }
-    
-
-    // li:first-child{
-    //     margin-right: 0.625rem;
-    // }
 
     .product-view-detail{
         padding: 1.25rem 1.5625rem;
@@ -230,6 +229,11 @@
 
     .product-nav{
         @include container-full;
+        ul{
+            li{
+                margin-right: 3.125rem;
+            }
+        }
     }
 
     .products-container{

@@ -11,11 +11,11 @@
                 </select>
                 <label for="filter-nav">Sort</label>
                 <ul>
-                    <li><a href="#">Popular</a></li>
-                    <li><a href="#">New Arrivals</a></li> 
-                    <li><a href="#">Best Sellers</a></li> 
-                    <li><a href="#">Special Offers</a></li> 
-                    <li><a href="#">Coming Soon</a></li> 
+                    <li><button>Popular</button></li>
+                    <li><button>New Arrivals</button></li> 
+                    <li><button>Best Sellers</button></li> 
+                    <li><button>Special Offers</button></li> 
+                    <li><button>Coming Soon</button></li> 
                 </ul>
             </nav>
             <div class="products-container">

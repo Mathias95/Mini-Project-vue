@@ -1,5 +1,12 @@
 <template>
-    <section class="product-detail">
+<div>
+    <section class="sub-banner">
+        <div class="sub-banner-container" v-if="product">
+            <h1>Product <span>View</span></h1>
+            <p>{{product.productCategorie}} <span>{{product.productSingleTitle}}</span></p>
+        </div>
+    </section>
+        <section class="product-detail">
         <div v-if="product" class="product-detail-container">
             <div class="sliderimg-col">
                 <div class="button-slider-wrapper">
@@ -85,6 +92,7 @@
         </div>
         <tab-nav/>
     </section>
+</div>
 </template>
 
 <script>
@@ -95,6 +103,9 @@
         name: 'ProductSingle',
         components: {
             TabNav
+        },
+        props: {
+            maintitle: String
         },
          data(){
              return {
