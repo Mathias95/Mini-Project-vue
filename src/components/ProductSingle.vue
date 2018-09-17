@@ -84,7 +84,7 @@
                         </form>
                 </div>
                 <div class="product-button">
-                    <button class="btn btn-dark"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+                    <button class="btn btn-dark-hover"><i class="fas fa-shopping-cart"></i> Add to cart</button>
                     <button class="btn btn-border "><i class="far fa-heart"></i> Add to lookbook</button>
                     <button class="compare-btn"><i class="fas fa-link"></i> Add to compare</button>
                 </div>

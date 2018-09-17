@@ -29,7 +29,8 @@
 
 .btn-slider{
     background-color: transparent;
-    color: $darkgrey-color;
+    color: $white-color;
+    background-color: $turquoise-color;
     border: none;
     outline: none;
     padding: 0.625rem 0.75rem;
@@ -236,6 +237,11 @@
             width: 10rem;
             margin-right: 1.875rem;
         }
+    }
+
+    .btn-slider{
+        background-color: transparent;
+        color: $darkgrey-color;
     }
 }
 
