@@ -58,30 +58,30 @@
                     <li>Free shipping with 4 days delivery</li>
                 </ul>
                 <div class="select-product-wrapper">
-                        <form class="select-product" action="">
-                            <label for="">Color</label>
-                            <select name="" id="">
-                                <option value="color_black" name="color">Black</option>
-                                <option value="color_green" name="color">Green</option>
-                                <option value="color_navy" name="color">Navy</option>
-                                <option value="color_white" name="color">White</option>
-                                <option value="color_red" name="color">Red</option>
-                            </select>
-                        </form>
-                        <form class="select-product" action="">
-                            <label for="">Size</label>
-                            <select name="" id="">
-                                <option value="size_XS" name="size">Extra Small</option>
-                                <option value="size_S" name="sizer">Small</option>
-                                <option value="size_M" name="size">Medium</option>
-                                <option value="size_L" name="size">Large</option>
-                                <option value="size_XL" name="size">Extra Large</option>
-                            </select>
-                        </form>
-                        <form class="select-product" action="">
-                            <label for="">Qtr</label>
-                            <input type="number" name="quantity" min="1" max="5">
-                        </form>
+                    <form class="select-product" action="">
+                        <label for="">Color</label>
+                        <select name="" id="">
+                            <option value="color_black" name="color">Black</option>
+                            <option value="color_green" name="color">Green</option>
+                            <option value="color_navy" name="color">Navy</option>
+                            <option value="color_white" name="color">White</option>
+                            <option value="color_red" name="color">Red</option>
+                        </select>
+                    </form>
+                    <form class="select-product" action="">
+                        <label for="">Size</label>
+                        <select name="" id="">
+                            <option value="size_XS" name="size">Extra Small</option>
+                            <option value="size_S" name="sizer">Small</option>
+                            <option value="size_M" name="size">Medium</option>
+                            <option value="size_L" name="size">Large</option>
+                            <option value="size_XL" name="size">Extra Large</option>
+                        </select>
+                    </form>
+                    <form class="select-product" action="">
+                        <label for="">Qtr</label>
+                        <input type="number" name="quantity" min="1" max="5" value="1">
+                    </form>
                 </div>
                 <div class="product-button">
                     <button class="btn btn-dark-hover"><i class="fas fa-shopping-cart"></i> Add to cart</button>
