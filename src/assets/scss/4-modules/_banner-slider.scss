@@ -20,7 +20,12 @@
 
     .banner-container{
         justify-content: flex-end;
-        margin-top: -6.875rem !important;
+        margin-bottom: 6.875rem !important;
         @include container-desktop;
+    }
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        .banner-container{
+            margin-top: -6.875rem !important;
+        }
     }
 }
