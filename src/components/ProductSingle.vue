@@ -61,6 +61,7 @@
                     <form class="select-product" action="">
                         <label for="">Color</label>
                         <select name="" id="">
+														<option value="" disabled selected hidden>Select Colour</option>
                             <option value="color_black" name="color">Black</option>
                             <option value="color_green" name="color">Green</option>
                             <option value="color_navy" name="color">Navy</option>
@@ -71,6 +72,7 @@
                     <form class="select-product" action="">
                         <label for="">Size</label>
                         <select name="" id="">
+														<option value="" disabled selected hidden>Select Size</option>
                             <option value="size_XS" name="size">Extra Small</option>
                             <option value="size_S" name="sizer">Small</option>
                             <option value="size_M" name="size">Medium</option>
@@ -80,14 +82,14 @@
                     </form>
                     <form class="select-product" action="">
                         <label for="">Qtr</label>
-                        <input type="number" name="quantity" min="1" max="5" value="1">
+                        <input type="number" name="quantity" min="1" max="50" value="1">
                     </form>
                 </div>
                 <div class="product-button">
-                    <button class="btn btn-dark-hover"><i class="fas fa-shopping-cart"></i> Add to cart</button>
-                    <button class="btn btn-border "><i class="far fa-heart"></i> Add to lookbook</button>
-                    <button class="compare-btn"><i class="fas fa-link"></i> Add to compare</button>
+										<button class="btn btn-dark-hover add-cart"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+                    <button class="btn btn-border add-lookbook"><i class="far fa-heart"></i> Add to lookbook</button>
                 </div>
+								<button class="compare-btn"><i class="fas fa-link"></i> Add to compare</button>
             </div>
         </div>
         <tab-nav/>

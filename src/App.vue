@@ -16,7 +16,7 @@
 import MainHeader from '@/components/MainHeader.vue';
 import MainFooter from '@/components/MainFooter.vue';
 
-// Remeber ro export the used components
+// Remeber to export the used components
 export default {
   components: {
     MainHeader,

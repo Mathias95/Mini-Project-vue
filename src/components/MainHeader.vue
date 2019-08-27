@@ -24,11 +24,11 @@
             <div class="nav-container">
                 <div id="MobileMenu">
                     <router-link to="/" class="logo"><span>Avenue </span>Fashion</router-link>
-                    <div class="burger-menu">
+                    <button class="burger-menu">
                         <span class="burger-icon"></span>
                         <span class="burger-icon"></span>
                         <span class="burger-icon"></span>    
-                    </div>
+                    </button>
                 </div>
                 <div id="nav-elements">
                     <ul class="nav-items">
