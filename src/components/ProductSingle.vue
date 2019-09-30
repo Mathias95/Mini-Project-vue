@@ -1,7 +1,7 @@
 <template>
 <div>
-    <section class="sub-banner">
-        <div class="sub-banner-container" v-if="product">
+    <section class="subbanner">
+        <div class="subbanner__container" v-if="product">
             <h1>Product <span>View</span></h1>
             <p>{{product.productCategorie}} <span>{{product.productSingleTitle}}</span></p>
         </div>
@@ -86,8 +86,8 @@
                     </form>
                 </div>
                 <div class="product-button">
-										<button class="btn btn-dark-hover add-cart"><i class="fas fa-shopping-cart"></i> Add to cart</button>
-                    <button class="btn btn-border add-lookbook"><i class="far fa-heart"></i> Add to lookbook</button>
+										<button class="btn btn-border--dark add-cart"><i class="fas fa-shopping-cart"></i> Add to cart</button>
+                    <button class="btn btn-border--light add-lookbook"><i class="far fa-heart"></i> Add to lookbook</button>
                 </div>
 								<button class="compare-btn"><i class="fas fa-link"></i> Add to compare</button>
             </div>

@@ -1,0 +1,101 @@
+.signup 
+  padding: 6.5rem 0 10rem 0
+
+.form
+	&__col
+		margin-bottom: 5rem
+		font-size: 1.4rem
+		&:last-child 
+			margin-bottom: 0rem
+  
+	&__header 
+		font-size: 1.5rem
+		text-transform: uppercase
+		font-weight: 700
+		color: $light-darkgrey-color
+		margin-bottom: 2.5rem
+
+	&__input-box 
+		width: 100%
+		padding: 1rem //
+		font-size: 1.4rem
+		margin-bottom: 1.5rem
+		border: .1rem solid #e7e7e7
+		outline: 0
+		background-color: transparent
+
+	&__input--error 
+		margin-bottom: 1.5rem
+		color: red
+		display: block
+
+	&__block
+		margin-top: 1.5rem
+		display: flex
+		flex-direction: column
+
+	&__reset
+		color: $turquoise-color
+		font-size: 1.4rem
+		margin-top: 2rem
+
+	&__updates 
+		font-size: 1.2rem
+		margin: 1.5rem 0 3rem 0
+		p 
+			margin: .4rem 0 0 3.5rem
+  
+	&__create
+		margin-top: 2rem
+
+	&__policy
+		color: $turquoise-color
+		font-size: 1.4rem
+
+@media #{$sm-bp}
+	.form
+		&__block
+			display: inline-block
+
+		&__reset
+			margin: 0 0 0 2rem
+
+@media #{$md-bp} 
+  .signup 
+    padding: 6.5rem 0 12rem 0
+		
+		.form
+			display: grid
+			grid-template-columns: 1fr 1fr
+  
+			&__col 
+				margin-bottom: 0rem
+
+				&--left 
+					padding-right: 3.2rem
+		
+				&--right 
+					padding-left: 3.2rem
+					border-left: .1rem solid #e7e7e7
+
+			&__block
+				justify-content: space-between
+				
+			&__updates 
+				display: flex
+				align-items: center
+
+@media #{$xl-bp}
+	.form
+		&__block
+			display: inline-flex
+			flex-direction: row
+			align-items: center
+
+		&__create 
+			width: 50%
+			margin: 0 0 0 1.5rem
+			text-align: right
+    
+  
+

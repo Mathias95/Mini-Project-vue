@@ -1,13 +1,13 @@
 <template>
-    <div id="tabnav" class="tabs">
-        <div class="tab-nav">
-            <button v-on:click="tabitem=1">Description<i class="fas fa-angle-down"></i></button>
-            <button v-on:click="tabitem=2">Video<i class="fas fa-angle-down"></i></button>
-            <button v-on:click="tabitem=3">Size &#38; Specs<i class="fas fa-angle-down"></i></button>
-            <button v-on:click="tabitem=4">Delivery &#38; Returns<i class="fas fa-angle-down"></i></button>
-            <button v-on:click="tabitem=5">Reviews<i class="fas fa-angle-down"></i></button>
+    <div id="tabnav" class="tab">
+        <div class="tab__nav">
+            <button class="tab__button" v-on:click="tabitem=1">Description<i class="fas fa-angle-down"></i></button>
+            <button class="tab__button" v-on:click="tabitem=2">Video<i class="fas fa-angle-down"></i></button>
+            <button class="tab__button" v-on:click="tabitem=3">Size &#38; Specs<i class="fas fa-angle-down"></i></button>
+            <button class="tab__button" v-on:click="tabitem=4">Delivery &#38; Returns<i class="fas fa-angle-down"></i></button>
+            <button class="tab__button" v-on:click="tabitem=5">Reviews<i class="fas fa-angle-down"></i></button>
         </div>
-        <div class="tab-wrapper">
+        <div class="tab__wrapper">
             <ul v-if="tabitem === 1">
                 <h2>Description headline</h2>
                <li>Sed ut mi mollis, consequat nulla lacinia, hendrerit turpis. Nulla sapien magna, interdum quis pretium nec, pharetra at felis. Curabitur dictum sapien est, eget ultricies turpis porta vel. Nam suscipit nec lacus sed imperdiet. Vestibulum a purus risus. Nulla et dictum augue, nec efficitur mi. Nam sit amet pretium elit. Aliquam congue, ligula id vehicula vestibulum, orci ex vulputate lacus, ac malesuada elit dolor eget ex. Sed quis aliquet risus, ut cursus lectus. In eget lorem tellus.</li>

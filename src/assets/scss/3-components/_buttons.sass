@@ -1,0 +1,53 @@
+%btn
+	font-size: 1.5rem
+	text-decoration: none
+	text-transform: uppercase
+	font-size: 1.3rem
+	padding: 1.6rem 3.2rem
+	font-weight: 700
+	border: 0.15rem solid $light-darkgrey-color
+	letter-spacing: 0.15rem
+	display: inline-block
+	text-align: center
+	background-color: transparent
+	color: $darkgrey-color
+	transition: all 400ms
+
+	&:hover
+		background-color: $turquoise-color
+		color: $white-color
+		border: 0.15rem solid transparent
+		outline: none
+		cursor: pointer
+	
+.btn
+	@extend %btn
+	&-border--dark
+		&:hover
+			background-color: $darkgrey-color
+	
+	&-border--light
+		&:hover
+			background-color: $turquoise-color
+
+	&--banner
+		background-color: $darkgrey-color
+		opacity: 0.8
+		color: $white-color
+		font-weight: 300
+		&:hover
+			opacity: 1
+  
+@media #{$md-bp}
+  %btn 
+    padding: 2rem 3.4rem
+  
+@media #{$xl-bp}
+  .btn 
+    &--banner 
+      color: $darkgrey-color
+      background-color: transparent
+      font-weight: 700
+    
+  
+

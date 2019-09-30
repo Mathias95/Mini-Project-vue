@@ -1,6 +1,6 @@
 <template>
-    <section class="sub-banner">
-        <div class="sub-banner-container">
+    <section class="subbanner">
+        <div class="subbanner__container">
             <h1>{{maintitle}}</h1>
             <p>{{subtext}}</p>
         </div>

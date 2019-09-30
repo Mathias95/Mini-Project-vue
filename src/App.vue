@@ -6,9 +6,9 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="sass">
 //Import global scss styling
-@import "./assets/scss/main";
+@import "./assets/scss/main.sass"
 </style>
 
 <script>

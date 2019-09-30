@@ -1,0 +1,94 @@
+.tab
+	@include container-mobile
+
+	h2
+		font-size: 1.4rem
+		margin-top: 2.2rem
+		color: $main-color
+		text-transform: uppercase
+
+	p
+		font-size: 1.4rem
+		color: $main-color
+		line-height: 2.4rem
+	
+	&__nav
+		margin-top: 3.5rem
+	
+	&__button
+		background-color: transparent
+		border: none
+		outline: none
+		display: block
+		color: $darkgrey-color
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 1.5rem
+		padding-bottom: 1.5rem
+		letter-spacing: 0.15
+		font-size: 1.2rem
+		cursor: pointer
+		i
+			margin-left: 1rem
+
+	&__wrapper
+		padding: 0 1rem
+		ul
+			margin-top: 3.5rem
+			list-style-type: none
+			li
+				border-bottom: none
+				padding-bottom: 0
+				margin-bottom: 3rem
+				font-size: 1.3rem
+				line-height: 2.4rem
+				color: $main-color
+				&:last-child 
+					margin-bottom: 0
+				
+@media #{$md-bp}
+  
+	.tab
+		@include container-tablet
+		
+		&__nav
+			display: flex
+			background-color: $light-white-color
+
+		&__button
+			display: inline-block
+			background-color: transparent
+			padding: 2rem 1.5rem
+			margin-bottom: 0
+			transition: all 400ms
+			border: none
+			font-size: 1.2rem
+			color: $darkgrey-color
+			font-weight: 700
+			letter-spacing: 0.15rem
+			text-transform: uppercase
+			outline: none
+			margin-bottom: 0rem
+			&:hover 
+				background-color: $darkgrey-color
+				color: $white-color
+			
+			&:active
+				background-color: $darkgrey-color
+			
+			i
+				display: none
+
+		&__wrapper
+			padding: 0 3rem
+		
+  #tabsmobile
+    display: none
+
+@media #{$xl-bp}
+
+	.tab
+		@include container-desktop
+		
+		&__button
+			min-width: 13rem

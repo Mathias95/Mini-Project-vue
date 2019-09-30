@@ -1,0 +1,65 @@
+.lookbook 
+	padding: 6.5rem 0
+
+	&__container 
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr))
+		grid-gap: 3.2rem
+
+	&__box 
+		text-align: center
+		padding: 4rem 3.5rem
+		background-color: $light-white-color
+	
+	&__img 
+		width: 50%
+
+	&__info 
+		margin: 1.5rem 0 0 0
+		h2 
+			margin: 0rem
+			color: $light-darkgrey-color
+			font-size: 3.5rem
+			text-transform: uppercase
+			font-weight: 900
+			line-height: 1.2
+
+			span 
+				display: block
+				font-weight: 300
+
+		p 
+			color: $main-color
+			line-height: 2.4rem
+			font-size: 1.3rem
+			margin: 2rem 0 3rem 0
+
+@media only screen and (min-width: 768px) 
+	.lookbook 
+		padding: 6.5rem 0 12rem 0
+
+@media only screen and (min-width: 1200px)
+	.lookbook
+
+		&__container 
+			grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr))
+			
+		&__box 
+			display: flex
+			padding: 4rem 5rem 0 5rem
+			text-align: right
+
+		&__info 
+			margin: 0
+			h2 
+				margin: 7rem 0 0 0
+
+@media only screen and (min-width: 1564px) 
+	.lookbook
+
+		&__img 
+			width: 100%
+			
+  
+
+
