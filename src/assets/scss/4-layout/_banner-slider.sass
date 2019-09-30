@@ -3,26 +3,22 @@
 	align-items: center
 	background-color: $light-white-color
 	justify-content: center
+	position: relative
 
-	&__container 
+	&__wrapper
 		width: 90%
-		@include center-auto
 		position: absolute
 		display: flex
 		justify-content: center
+		z-index: 1
 
 @media #{$xl-bp}
-  .banner 
-    align-items: flex-end
-  
-  .banner__container 
-    justify-content: flex-end
-    margin-bottom: 10.1rem !important
-    @include container-desktop
 
-  @media screen and (-webkit-min-device-pixel-ratio: 0) 
-    .banner__container 
-      margin-top: -10.1rem !important
+	.banner
+		align-items: flex-end
+
+		&__wrapper
+			justify-content: flex-end
+			transform: translateY(-10rem)
     
   
-
