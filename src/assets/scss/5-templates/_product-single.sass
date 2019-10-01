@@ -147,36 +147,47 @@
 	margin-bottom: 3rem
 
 	&__cart
-		min-width: 100%
+		width: 100%
 		margin-bottom: 2rem
 	
 	&__lookbook
-		min-width: 100%
+		width: 100%
 
+@media #{$sm-bp}
+	
+	.add
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+		&__cart
+			margin-bottom: 0rem
+
+		&__cart,
+		&__lookbook
+			width: 48%
+			padding: 2rem 1.6rem
+
+@media screen and (min-width:606px) and (max-width:991px)
+
+	.review
+		&__list
+			margin-bottom: 0rem
 
 @media #{$md-bp}
 	.product
 		padding: 6.5rem 0 12rem 0
-	
-		&__wrapper
-			display: grid
-			grid-auto-columns: 1fr
-			grid-template-columns: 1fr 1fr
-			grid-template-rows: auto
-			grid-column-gap: 3rem
 
 		&__slider-button
 			background-color: transparent
 			color: $darkgrey-color
-
-  .review
-    align-items: center
-
-		&__list
-			list-style-type: none
 	
 	.select
 		display: flex
+
+		&__form
+			&:first-child
+				margin-bottom: 1.5rem
 
 		&__title
 			display: block
@@ -185,6 +196,27 @@
 		&__options-list
 			width: 16rem
 			margin-right: 3rem
+			margin-bottom: 0
+
+@media #{$lg-bp}
+
+	.product
+		&__wrapper
+			display: grid
+			grid-auto-columns: 1fr
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: auto
+			grid-column-gap: 3rem
+
+	.review
+		&__list
+			margin-bottom: 1.5rem
+
+	.select
+
+		&__form
+			&:first-child
+				margin-bottom: 0rem
 
 @media #{$xl-bp}
 
@@ -206,11 +238,6 @@
 		&__list
 			margin: 0 1.5rem 0 0
     	flex-wrap: nowrap
-  
-	.select
-		
-		&__options-list
-			margin-bottom: 0
 
 	.add
 		

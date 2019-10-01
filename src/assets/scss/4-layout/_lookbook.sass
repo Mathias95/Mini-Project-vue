@@ -2,13 +2,17 @@
 
 	&__container 
 		display: grid
-		grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr))
+		grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr))
 		grid-gap: 3.2rem
 
 	&__box 
 		text-align: center
 		padding: 4rem 3.5rem
 		background-color: $light-white-color
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
 	
 	&__img 
 		width: 50%
@@ -31,6 +35,12 @@
 	&__text 
 		margin: 2rem 0 3rem 0
 
+@media #{$sm-bp}
+	.lookbook
+
+		&__box
+			padding: 4rem 2.5rem
+
 @media #{$xl-bp}
 	.lookbook
 
@@ -39,8 +49,11 @@
 			
 		&__box 
 			display: flex
+			flex-direction: row
+			align-items: flex-start
 			padding: 4rem 5rem 0 5rem
 			text-align: right
+
 
 		&__info 
 			margin: 0
