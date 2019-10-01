@@ -37,6 +37,31 @@
 		font-weight: 300
 		&:hover
 			opacity: 1
+
+.compare-btn
+	background-color: transparent
+	outline: none
+	border: none
+	font-size: 1.3rem
+	letter-spacing: 0.09375rem
+	text-transform: uppercase
+	font-weight: 700
+	color: $light-darkgrey-color
+	display: block
+	transition: all 300ms
+	padding: 0rem
+	cursor: pointer
+	&:hover
+		color: $turquoise-color
+
+	i
+		height: 2.8rem
+		width: 2.8rem
+		background-color: $main-color
+		color: $white-color
+		padding: .8rem
+		border-radius: 50%
+		margin-right: .5rem
   
 @media #{$md-bp}
   %btn 

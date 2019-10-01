@@ -12,16 +12,12 @@
 		margin-bottom: 2.8125rem
 		&:last-child 
 			margin-bottom: 0
-		
-		h3 
-			color: $light-darkgrey-color
-			text-transform: uppercase
-			margin: 0 0 2.5rem 0
-			font-size: 1.4rem
-			font-weight: 600
 
 	&__items 
 		list-style-type: none
+
+	&__title 
+		margin: 0 0 2.5rem 0
 
 	&__item
 		font-size: 1.3rem
@@ -62,8 +58,7 @@
 			align-items: center
 			font-size: 2.8rem
 
-	&__item 
-		a 
+	&__link
 			color: $white-color
 			&:hover 
 				color: $darkgrey-color
@@ -101,13 +96,12 @@
 				justify-content: center
 				background-color: $darkgrey-color
 				font-weight: 700
-
-				h4
-					margin: 0
-
-					span
-						font-weight: 300
-						display: block
+		
+		&__title
+			margin: 0
+			span
+				font-weight: 300
+				display: block
 
 @media #{$lg-bp}
 	.footer-banner

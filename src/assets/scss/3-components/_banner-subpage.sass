@@ -3,26 +3,26 @@
 	background-image: linear-gradient(rgba(51, 51, 51, 0.75) rgba(51, 51, 51, 0.75)), url('./assets/img/smallbanner.jpg') 
   background-size: auto, cover 
   background-position: 0 0, 50% 50%
-	
-	&__container
-		@include container-mobile 
-		text-align: center 
-		color: $white-color 
-		text-transform: uppercase 
+	text-align: center 
+	color: $white-color 
+	text-transform: uppercase
 
-		h1
-			letter-spacing: 0.3rem 
-			font-size: 3rem 
-			margin: 0 0 2.5rem 0 
+	&__title
+		letter-spacing: 0.3rem 
+		font-size: 3rem 
+		margin: 0 0 2.5rem 0 
 
-			span  
-				font-weight: 300 
-		p
-			letter-spacing: 0.3rem 
-			margin: 0 
-			font-size: 2rem 
-			span
-				color: $turquoise-color
+		&--highlight 
+			font-weight: 300 
+
+	&__text
+		letter-spacing: 0.3rem 
+		margin: 0 
+		font-size: 2rem 
+
+		&--highlight
+			color: $turquoise-color
+			margin-left: 1rem
 
 @media #{$md-bp} 
   .subbanner

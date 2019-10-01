@@ -1,5 +1,4 @@
 .lookbook 
-	padding: 6.5rem 0
 
 	&__container 
 		display: grid
@@ -16,29 +15,23 @@
 
 	&__info 
 		margin: 1.5rem 0 0 0
-		h2 
-			margin: 0rem
-			color: $light-darkgrey-color
-			font-size: 3.5rem
-			text-transform: uppercase
-			font-weight: 900
-			line-height: 1.2
 
-			span 
-				display: block
-				font-weight: 300
+	&__title
+		margin: 0rem
+		color: $light-darkgrey-color
+		font-size: 3.5rem
+		text-transform: uppercase
+		font-weight: 900
+		line-height: 1.2
 
-		p 
-			color: $main-color
-			line-height: 2.4rem
-			font-size: 1.3rem
-			margin: 2rem 0 3rem 0
+		span 
+			display: block
+			font-weight: 300
 
-@media only screen and (min-width: 768px) 
-	.lookbook 
-		padding: 6.5rem 0 12rem 0
+	&__text 
+		margin: 2rem 0 3rem 0
 
-@media only screen and (min-width: 1200px)
+@media #{$xl-bp}
 	.lookbook
 
 		&__container 
@@ -51,8 +44,9 @@
 
 		&__info 
 			margin: 0
-			h2 
-				margin: 7rem 0 0 0
+
+		&__title 
+			margin: 7rem 0 0 0
 
 @media only screen and (min-width: 1564px) 
 	.lookbook

@@ -1,0 +1,34 @@
+%heading
+	font-family: Montserrat, sans-serif
+
+.heading-1
+	@extend %heading
+
+.heading-2
+	@extend %heading
+
+.heading-3
+	@extend %heading
+	font-size: 1.6rem
+	color: $light-darkgrey-color
+	text-transform: uppercase
+	
+.heading-4
+	@extend %heading
+	font-size: 1.4rem
+	color: $light-darkgrey-color
+	text-transform: uppercase
+
+	&--bold
+		text-transform: uppercase
+		font-weight: 600
+
+.heading-5
+	@extend %heading
+	font-size: 1.3rem
+	color: $main-color
+	line-height: 2.4rem
+
+	&--bold
+		text-transform: uppercase
+		font-weight: 700

@@ -1,0 +1,223 @@
+.product
+	padding: 6.5rem 0
+
+	&__slider
+		position: relative
+		display: flex
+		align-items: center
+		justify-content: center
+
+	&__slider-buttons
+		position: absolute
+		display: flex
+		justify-content: space-between
+		width: 100%
+
+	&__slider-button
+		background-color: transparent
+		color: $white-color
+		background-color: $turquoise-color
+		border: none
+		outline: none
+		padding: 1rem 1.2rem
+		font-size: 3.3rem
+		transition: all 400ms
+		cursor: pointer
+
+		&:hover
+			color: $white-color
+			background-color: $turquoise-color
+
+	&__slider-img
+		object-fit: contain
+
+	&__detail
+		h2
+			margin: 3rem 0 2.5rem 0
+
+	&__price
+		list-style-type: none
+		font-size: 2.2rem
+		color: $main-color
+		display: flex
+		margin-bottom: 2.5rem
+		margin-top: 3rem
+
+		li
+			span
+				font-size: 1.2rem
+				vertical-align: text-top
+
+			&:first-child
+				margin-right: 1.5rem
+	
+	&__stock
+  list-style-type: none
+  margin-bottom: 3rem
+
+  li
+    margin-bottom: .8rem
+
+	&__stock-tag
+		color: $turquoise-color
+		margin-left: .5rem
+
+	&__details-list
+		font-size: 1.4rem
+		margin: 2rem 0 2rem 1.8rem
+		li
+			margin-bottom: .5rem
+
+.review
+	display: flex
+	flex-wrap: wrap
+	font-weight: 500
+	font-size: 1.3rem	
+	align-items: center
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		color: $light-darkgrey-color
+		margin: 0 1.5rem 1.5rem 0
+		list-style-type: none
+	
+	&__icon-star
+		color: #dad1ad
+
+		&--empty
+			color: $main-text-color
+	
+	&__add
+		border-left: 0.1rem solid $light-darkgrey-color
+		border-right: 0.1rem solid $light-darkgrey-color
+		padding: 0 1rem
+		color: $turquoise-color
+		
+	&__amount
+		margin: 0 1.2rem
+		color: $main-text-color
+
+	&__share
+		list-style-type: none
+		display: flex
+		align-items: center
+
+	&__share-item
+		margin: 0 1rem
+
+	&__share-icon
+		font-size: 1.5rem
+		color: $light-darkgrey-color
+		&:hover
+			color: $turquoise-color
+
+.select
+	margin-bottom: 4rem
+	flex-wrap: wrap
+	
+	&__title
+		display: block
+		margin-bottom: 1rem
+		text-transform: uppercase
+		letter-spacing: 0.15rem
+
+	&__options-list
+		@include form-style
+		width: 100%
+		margin: 0 0 3.2rem 0
+		appearance: none  	
+		background: url('./assets/img/chevron-down-solid.png') no-repeat
+		background-size: 1.2rem
+		background-position: calc(100% - 2rem) center
+		background-repeat: no-repeat	
+		font-size: 1.4rem
+		height: 3.8rem
+		padding-left: 1.5rem
+
+	&__amount
+		@include form-style
+		height: 3.8rem
+		width: 6rem
+		text-align: center
+		font-size: 1.4rem
+		padding-left: 1.5rem
+
+.add
+	margin-bottom: 3rem
+
+	&__cart
+		min-width: 100%
+		margin-bottom: 2rem
+	
+	&__lookbook
+		min-width: 100%
+
+
+@media #{$md-bp}
+	.product
+		padding: 6.5rem 0 12rem 0
+	
+		&__wrapper
+			display: grid
+			grid-auto-columns: 1fr
+			grid-template-columns: 1fr 1fr
+			grid-template-rows: auto
+			grid-column-gap: 3rem
+
+		&__slider-button
+			background-color: transparent
+			color: $darkgrey-color
+
+  .review
+    align-items: center
+
+		&__list
+			list-style-type: none
+	
+	.select
+		display: flex
+
+		&__title
+			display: block
+			margin-bottom: 1rem
+
+		&__options-list
+			width: 16rem
+			margin-right: 3rem
+
+@media #{$xl-bp}
+
+	.product
+
+		&__slider-img
+			height: 100%
+
+		&__detail
+			h2
+				margin-top: 0rem
+
+		&__detail-list
+			margin: 1.5rem 0 3.5rem 1.8rem
+
+	.review
+		flex-wrap: nowrap
+
+		&__list
+			margin: 0 1.5rem 0 0
+    	flex-wrap: nowrap
+  
+	.select
+		
+		&__options-list
+			margin-bottom: 0
+
+	.add
+		
+		&__cart
+			margin-bottom: 0rem
+			min-width: 22.5rem
+			margin-right: 2.5rem
+		
+		&__lookbook
+			min-width: 28rem

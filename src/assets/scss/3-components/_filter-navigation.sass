@@ -1,0 +1,71 @@
+.filter
+	padding: 5rem 0
+	border-top: 0.13rem solid $lightgrey-color-2
+	margin-top: 5rem
+		
+	&__select
+		@include form-style
+		text-transform: uppercase
+		letter-spacing: 0.15rem
+		font-weight: 700
+		color: $darkgrey-color
+		appearance: none
+		width: 16rem
+		margin-right: 2rem
+		background: url('./assets/img/chevron-down-solid.png') no-repeat
+		background-size: 1.2rem
+		background-position: calc(100% - 2rem) center
+		background-repeat: no-repeat
+
+	&__by
+		border-left: .1rem solid $lightgrey-color-2
+		padding: 0 0 0 2rem
+		font-weight: 400
+		
+	&__by-text
+		margin-right: 1rem
+
+	&__list
+		display: none
+	
+@media #{$lg-bp}
+	
+	.filter
+
+		&__select
+   	 display: none
+
+		&__by
+			display: none
+			
+		&__list
+      display: flex
+		
+		&__items
+			list-style: none
+			margin-right: 3.5rem
+			&:last-child
+				margin-right: 0
+
+		&__button
+			transition: all 400ms
+			background-color: transparent
+			border: none
+			outline: none
+			text-transform: uppercase
+			font-size: 1.3rem
+			font-weight: 700
+			color: $main-color
+			cursor: pointer
+			
+			&:hover
+				color: $turquoise-color
+
+			&:active
+				color: $turquoise-color
+	
+@media #{$xl-bp}
+
+  .filter
+		&__items
+			margin-right: 5rem

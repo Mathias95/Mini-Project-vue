@@ -1,34 +1,29 @@
 .brand
-	padding: 6.5rem 0
 	
-	&__container
-		@include container-mobile
+	&__wrapper
 		display: grid
 		grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr))
 		grid-template-rows: auto
 		grid-gap: 2.5rem
-		p
-			font-size: 1.3rem
 
 	&__col
 		&:last-child
 			margin-bottom: 0
-		h2
-			font-size: 1rem
-			text-transform: uppercase
-			color: $light-darkgrey-color
-		span
-			text-transform: uppercase
-			font-size: 1.2rem
-			color: $main-color
-			font-weight: 700
-		p
-			font-size: 1.4rem
-			margin: 2rem 0 0 0
-			line-height: 2.4rem
-			color: $lightgrey-color
-			a
-				color: $turquoise-color
+	
+	&__col-title
+		text-transform: uppercase
+		color: $light-darkgrey-color
+
+	&__col-subtitle
+		font-size: 1.2rem
+			
+	&__col-text
+		font-size: 1.4rem
+		margin: 1rem 0 0 0
+		line-height: 2.4rem
+		color: $lightgrey-color
+		a
+			color: $turquoise-color
 
 	&__col-award
 		margin-top: 5rem
@@ -38,17 +33,9 @@
 		align-items: center
 		justify-content: center
 
-@media #{$md-bp} 
-  .brand
-    padding: 6.5rem 0 12rem 0
-		
-		&__container
-			@include container-tablet
-
 @media #{$xl-bp}
 	.brand
-		&__container
-			@include container-desktop
+		&__wrapper
 			grid-template-columns: repeat(10, 1fr)
 
 		&__img-design

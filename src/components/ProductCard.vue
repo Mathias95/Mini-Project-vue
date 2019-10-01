@@ -1,42 +1,44 @@
 <template>
-  <div class="products-container">
-    <div v-for="product in products" :key="product.id" class="product-view">
-      <ul class="view-pricetag">
-        <li>
+  <div class="products-container products container-full">
+    <div v-for="product in products" :key="product.id" class="product-view products__view">
+      <ul class="view-pricetag products__price-list">
+        <li class="products__price-item">
           <strike>
-            <span>£</span>
+            <span class="products__currency">£</span>
             {{product.productOldPrice}}
           </strike>
         </li>
-        <li>
-          <span>£</span>
+        <li class="products__price-item">
+          <span class="products__currency">£</span>
           {{product.productPrice}}
         </li>
       </ul>
-      <picture>
-        <router-link :to="`/product/${product.id}`">
-          <img class="product-img" :src="product.productviewImg" />
+      <picture class="products__item">
+        <router-link class="products__link" :to="`/product/${product.id}`">
+          <img class="product-img products__img" :src="product.productviewImg" />
         </router-link>
       </picture>
-      <router-link :to="`/product/${product.id}`" id="info-tag">
-        <i class="fas fa-info-circle"></i>
+      <router-link class="products__info" :to="`/product/${product.id}`" id="info-tag">
+        <i class="fas fa-info-circle products__info-icon"></i>
       </router-link>
-      <div class="thumbnail">
+      <div class="thumbnail products__thumbnail">
         <img :src="product.productThumbnailFront" />
         <img :src="product.productThumbnailBack" />
       </div>
-      <div class="product-view-detail">
-        <h3>{{product.productTitle}}</h3>
-        <p>{{product.productDesc}}</p>
-        <button class="product-view-button">
-          <i class="fas fa-shopping-cart"></i>
-        </button>
-        <button class="product-view-button">
-          <i class="far fa-heart"></i>
-        </button>
-        <button class="product-view-button">
-          <i class="fas fa-link"></i>
-        </button>
+      <div class="product-view-detail products__details">
+        <h3 class="products__title">{{product.productTitle}}</h3>
+        <p class="products__description">{{product.productDesc}}</p>
+				<div class="shopping">
+					<button class="product-view-button shopping__button">
+						<i class="fas fa-shopping-cart shopping__button-icon"/>
+					</button>
+					<button class="product-view-button shopping__button">
+						<i class="far fa-heart shopping__button-icon"/>
+					</button>
+					<button class="product-view-button shopping__button">
+						<i class="fas fa-link shopping__button-icon"/>
+					</button>
+				</div>
       </div>
     </div>
   </div>

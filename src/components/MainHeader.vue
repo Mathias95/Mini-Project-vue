@@ -23,12 +23,12 @@
         <nav class="mainnav">
             <div class="nav-container">
                 <div id="MobileMenu">
-                    <router-link to="/" class="logo"><span>Avenue </span>Fashion</router-link>
-                    <button class="burger-menu">
-                        <span class="burger-icon"></span>
-                        <span class="burger-icon"></span>
-                        <span class="burger-icon"></span>    
-                    </button>
+									<Logo/>
+									<button class="burger-menu">
+											<span class="burger-icon"></span>
+											<span class="burger-icon"></span>
+											<span class="burger-icon"></span>    
+									</button>
                 </div>
                 <div id="nav-elements">
                     <ul class="nav-items">
@@ -81,7 +81,12 @@
 </template>
 
 <script>
-    export default {
-        name: 'MainHeader',
-    };
+import Logo from "@/components/Logo.vue";
+
+export default {
+	name: 'MainHeader',
+	components: {
+		Logo
+	}
+};
 </script>
