@@ -1,6 +1,7 @@
 <template>
   <div class="about">
 		<sub-banner maintitle="The Brand" subtext="Company Slogan Goes Here"></sub-banner>
+		
 		<section class="brand padding-section">
 			<div class="brand__wrapper container">
 
@@ -33,7 +34,7 @@
 					Pellentesque congue justo esteir pellentesque aliquet massa eget posuere tincidunt. Cras viverra ullamcorper nunc accumsan hendrerit <a href="#">A link <i class="fas fa-long-arrow-alt-right"></i></a></p>
 				</div>
 
-				<div class="brand__col--award">
+				<div class="brand__img brand__img--award">
 					<img src="../assets/img/award1.png" alt="">
 					<img src="../assets/img/award2.png" alt="">
 					<img src="../assets/img/award3.png" alt="">

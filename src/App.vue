@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <main-header/>
+		<top-header/>
+    <responsive-navigation/>
     <router-view/>
     <main-footer/>
   </div>
@@ -13,13 +14,15 @@
 
 <script>
 // @ is an alias to /src
-import MainHeader from '@/components/MainHeader.vue';
+import TopHeader from '@/components/TopHeader.vue';
+import ResponsiveNavigation from '@/components/ResponsiveNavigation.vue';
 import MainFooter from '@/components/MainFooter.vue';
 
 // Remeber to export the used components
 export default {
   components: {
-    MainHeader,
+		TopHeader,
+    ResponsiveNavigation,
     MainFooter
   }
 }

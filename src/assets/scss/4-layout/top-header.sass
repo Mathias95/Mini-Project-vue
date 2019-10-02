@@ -1,0 +1,94 @@
+.header
+	background-color: $darkgrey-color
+	color: $main-color
+
+	&__wrapper
+		display: flex
+		align-items: center
+		justify-content: space-between
+		font-size: 1.3rem
+
+	&__info
+
+	&__login
+		list-style-type: none
+		display: none
+
+	&__login-item
+		.router-link-active 
+      color: $turquoise-color
+
+	&__login-link
+		color: $main-color
+		text-decoration: none
+
+		&:hover,
+		&:active
+			color: $turquoise-color
+
+
+	&__basket
+		background-color: $turquoise-color
+		color: $white-color
+		outline: none
+		border: none
+		padding: 1.5rem 2.2rem
+		cursor: pointer
+
+	&__basket-icon
+
+		&--1
+			margin-right: 2rem
+			font-size: 1.6rem
+
+		&--2
+			margin-left: .8rem
+		
+.currency
+	margin-left: 5%
+
+	&__title
+
+	&__select
+		cursor: pointer
+		background-color: transparent
+		border: none
+		outline: none
+
+	&__option
+
+@media #{$md-bp}
+
+	.header
+
+		&__info
+    	display: flex
+    	align-items: center
+
+		&__login
+			display: flex
+			margin-right: 6.5rem
+		
+		&__login-item
+			margin-right: 3.5rem
+			&:last-child
+				margin: 0rem
+
+  .currency
+    margin: 0rem
+
+@media #{$xl-bp}
+
+	.header
+
+		&__login
+			display: flex
+			margin-right: 7.5rem
+
+		&__login-item
+			margin-right: 3.5rem
+			&:last-child
+				margin: 0rem
+
+
+	

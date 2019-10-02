@@ -1,25 +1,5 @@
 <template>
     <div>
-        <header>
-            <div class="header-container">
-                <div class="currency">
-                    <span>Currency :</span>
-                    <select class="currency-picker">
-                        <option value="GPR">GPR</option>
-                        <option value="DKK">DKK</option>
-                        <option value="SEK">SEK</option>
-                        <option value="EUR">EUR</option>
-                    </select>
-                </div>
-                <div class="header-info">
-                    <ul class="member-dekstop">
-                        <li><router-link to="/SignUp">Register</router-link></li>
-                        <li><router-link to="/SignUp">Sign in</router-link></li>
-                    </ul>
-                    <button class="basket"><i id="cart-icon" class="fas fa-shopping-cart"></i>empty<i id="arrow-icon" class="fas fa-angle-down"></i></button>  
-                </div>
-            </div>
-        </header>
         <nav class="mainnav">
             <div class="nav-container">
                 <div id="MobileMenu">

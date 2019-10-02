@@ -1,6 +1,6 @@
 <template>
   <div class="products-container products container-full">
-    <div v-for="product in products" :key="product.id" class="product-view products__view">
+    <div v-for="product in products" :key="product.id" class="products__view">
       <ul class="view-pricetag products__price-list">
         <li class="products__price-item">
           <strike>

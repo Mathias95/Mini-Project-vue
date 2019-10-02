@@ -1,0 +1,45 @@
+.product
+	
+	&__slider
+		position: relative
+		display: flex
+		align-items: center
+		height: 100%
+		width: 100%
+
+	&__slider-wrapper
+		width: 100%
+
+	&__slider-buttons
+		position: absolute
+		display: flex
+		justify-content: space-between
+		width: 100%
+
+	&__slider-button
+		background-color: transparent
+		color: $white-color
+		background-color: $turquoise-color
+		border: none
+		outline: none
+		padding: 1rem 1.2rem
+		font-size: 3.3rem
+		transition: all 400ms
+		cursor: pointer
+
+		&:hover
+			color: $white-color
+			background-color: $turquoise-color		
+
+.carousel-cell
+	min-width: 100%
+	margin-right: 10px
+	object-fit: contain
+
+@media #{$md-bp}
+	.product
+
+		&__slider-button
+			background-color: transparent
+			color: $darkgrey-color
+	
