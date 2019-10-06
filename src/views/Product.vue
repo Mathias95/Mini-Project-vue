@@ -125,7 +125,7 @@ export default {
 				prevNextButtons: true,
 				freeScroll: false,
 				pageDots: false,
-				wrapAround: true,
+				wrapAround: true
 			}
     };
 	},

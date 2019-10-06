@@ -68,14 +68,14 @@
 		</footer>
 		<div class="copy">
 			<div class="copy__container container">
-				<span class="copy__text">&#169; 2019 Avenue Fashion&#8482;</span>
+				<span class="copy__text">&#169; {{ new Date().getFullYear() }} Avenue Fashion&#8482;</span>
 			</div>
 		</div>
 	</div>
 </template>
 
 <script>
-    export default {
-        name: "MainFooter",
-    };
+export default {
+	name: "MainFooter",
+};
 </script>

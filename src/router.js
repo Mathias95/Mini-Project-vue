@@ -8,6 +8,10 @@ import Product from './views/Product.vue';
 Vue.use(Router)
 
 export default new Router({
+	//Scrolls to top when change route view
+	scrollBehavior(){
+		return { x: 0, y: 0};
+	},
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
@@ -32,4 +36,4 @@ export default new Router({
       component: SignUp
     }
   ]
-})
+});
